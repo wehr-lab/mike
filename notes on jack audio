@@ -1,0 +1,14 @@
+emulator mode does not use jack
+this is because usually you use emulator mode on a non-rig computer, and jack will mess up your ability to watch youtube videos and listen to internet radio.
+instead, soundclient playsound writes a temporary wav file in /tmp, and calls aplay to play it.
+aplay is the play method of alsa, the vanilla sound player demon included in all linux distributions, jack is the low-latency alternative. If the jack daemon is running, alsa is not, and aplay won't work.
+So, if the jack daemon is running, paradigms in emulator mode won't work (but soundtest.py with jack will).
+If you want to use emulator mode, you have to quit the jack daemon (soundserver), and restart the alsa daemon, using
+pulseaudio -k && sudo alsa force-reload
+(note that pulseaudio is the audio routing thing that normally routes audio signals from various web browsers and music players to the right places. pasuspender blocks all other sources other than jack from using pulseaudio)
+
+Without jack, you can play a wav file with aplay, or test speaker directly with with speaker-test (built-in linux):
+speaker-test -r 41000 -t sine -f 8000
+(plays infinitely)
+speaker-test -r 44100 -t sine -f 600 -l 1 -p 1 
+(plays for a couple seconds)

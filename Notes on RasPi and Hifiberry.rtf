@@ -1,0 +1,137 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq0\fcharset128 Helvetica{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 Droid Sans;}{\f7\fnil\fprq2\fcharset0 FreeSans;}{\f8\fswiss\fprq0\fcharset128 FreeSans;}}
+{\colortbl;\red0\green0\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\s1\sbasedon15\snext1\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading 1;}
+{\s2\sbasedon15\snext2\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading 2;}
+{\s3\sbasedon15\snext3\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading 3;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af8 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af8\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af8 Index;}
+{\s20\sbasedon0\snext20 Quotations;}
+{\s21\sbasedon15\snext21\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Title;}
+{\s22\sbasedon15\snext22\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Subtitle;}
+{\s23\sbasedon0\snext23 Preformatted Text;}
+}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241986}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+I also got the hifiberry to work, and once it is working it does so natively. The instructions that they provide for its installation are for an old version of raspbian, so I figured I'd try to prevent you from duplicating the headaches i've already had:}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+if they're not already installed, the card uses a standard called i2c, which needs its tools:}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+    }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+sudo apt-get install i2c-tools}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+    }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+sudo adduser pi i2c}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+their instructions refer to a blacklist file that raspbian no longer uses. instead, you need to tell it to load the modules rather than un-blacklist them:}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+    }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+sudo nano /etc/modules}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+and add}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+    }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+i2c-bcm2708}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+    }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+snd-soc-pcm512x}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+    }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+snd-soc-wm8804}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+if present, remove}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+     }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+snd_bcm2835 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+I'm sure you've used nano before, but just in case, to exit saving changes: ctrl+x, Y, return.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+their instructions for the /boot/config.txt file are also a little off. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+Add}{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+:}
+\par \pard\plain \s23\sl280\slmult0{\rtlch \ltrch\loch
+dtoverlay=hifiberry-dacplus}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+uncomment}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+    }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+dtparam=i2c_arm=on}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+add}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+     }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+dtparam=i2c1=on}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+comment out}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\fs28\loch\f5
+     }{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+dtparam=audio=on}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+then if you also make that alsa config file they mention it should be good to go after a reboot. I was able to play audio with mplayer.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+I also recommend using the lite version of raspbian, I was using a 1A power supply and had no issues with stability. All the interfacing w/ the rpi is going to be command line anyway.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+It appears to be the case that the I2C protocol only uses a few of the GPIO pins on the board, so we can potentially still use the rest for passive state signaling back to the computer (pi writes the pins hi/lo and then the computer comes along and checks their status when it can, rather than having to initialize a serial byte transfer).}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+I also came across a few useful pages that I'll pass on for reference:}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+http://wiki.linuxaudio.org/wiki/raspberrypi}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+http://subversion.ffado.org/wiki/IrqPriorities}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\sl280\slmult0{\cf1\outl0\expnd0\expndtw0\kerning0\rtlch \ltrch\loch\fs28\loch\f5
+https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial}
+\par }

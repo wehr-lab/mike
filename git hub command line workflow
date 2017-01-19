@@ -1,0 +1,58 @@
+the git hub command line workflow
+
+(mainly for linux)
+from https://www.atlassian.com/git/tutorials/comparing-workflows 
+This is based on the Centralized Workflow, which is the simplest.
+Other possible workflows use branching etc, such as
+Feature Branch Workflow, Gitflow Workflow, Forking Workflow
+
+%
+basic workflow:
+git pull
+edit some files
+git commit -a -m "<message>"
+git push 
+
+%
+slightly more advanced workflow:
+git pull
+edit some files
+git add (this chooses which changes to stage for commit)
+git commit (commit changes) (this still only stages them locally)
+git push (publishes committed changes to central repository)
+
+(two differences with this workflow: you choose which files to add 
+instead of adding all of them, and you rely on the text editor for your
+commit message)
+
+%%%
+notes: 
+"git pull" fetches the current remote snapshot and merges it into your local copy.
+git commit -m "<message>" bypasses the text editor and allows
+you to enter <message> as the commit message
+"git commit -a" commits a snapshot of all changes in the working directory, 
+so you don't need to bother with git add. Unless you've created a new file, 
+"git commit -a" doesn't see those, you have to git add them.
+
+not sure if git push needs to be "git push origin master" 
+or if "git push" is good enough
+
+the idea of "git add" is that you might only 
+want to commit some changes at a time. In fact you could group them.
+(git add is also for adding new files)
+
+%%%%%%%%%%%
+
+if you get into a conflict and git refuses to push your commits 
+and says you need to resolve or merge conflicts, you can try
+git pull --rebase origin master
+
+this pushes each commits separately to help isolate the conflict
+once you see there is a merge conflict in a particular file
+"git status" can help you see where the problem is
+
+then you edit the file until you're happy, and execute
+git add <some-file> git rebase --continue
+
+if you panic, you can always do
+git rebase --abort

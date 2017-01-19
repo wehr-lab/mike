@@ -6,6 +6,8 @@ This is based on the Centralized Workflow, which is the simplest.
 Other possible workflows use branching etc, such as
 Feature Branch Workflow, Gitflow Workflow, Forking Workflow
 
+pull and push are described nicely here: https://www.atlassian.com/git/tutorials/syncing
+add and commit are described nicely here: https://www.atlassian.com/git/tutorials/saving-changes
 %
 basic workflow:
 git pull
@@ -28,6 +30,7 @@ commit message)
 %%%
 notes: 
 "git pull" fetches the current remote snapshot and merges it into your local copy.
+  that is, it's just a convencience command that combines git fetch and git merge
 git commit -m "<message>" bypasses the text editor and allows
 you to enter <message> as the commit message
 "git commit -a" commits a snapshot of all changes in the working directory, 
@@ -42,6 +45,10 @@ want to commit some changes at a time. In fact you could group them.
 (git add is also for adding new files)
 
 %%%%%%%%%%%
+how to deal with conflicts
+
+%%%
+another way to deal with conflicts
 
 if you get into a conflict and git refuses to push your commits 
 and says you need to resolve or merge conflicts, you can try
@@ -56,3 +63,5 @@ git add <some-file> git rebase --continue
 
 if you panic, you can always do
 git rebase --abort
+
+%%%
